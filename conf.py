@@ -1,0 +1,9 @@
+datafile='raw/weblog.csv'
+min_delay_record=100  #ms
+max_delay_record=1500  #ms
+min_delay_response=0  #ms
+max_delay_response=700  #ms
+stream_name = 'MicroservicesLogs-KinesisStream-KN9209K31BFQ'
+region_name='us-west-2'
+window_size = 5
+table_name = 'MicroservicesLogs-LogsDynamoDBTable-1MFMA1W6UB9HS'
