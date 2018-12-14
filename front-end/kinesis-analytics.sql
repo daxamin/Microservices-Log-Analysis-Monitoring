@@ -70,7 +70,7 @@ CREATE OR REPLACE PUMP "HOME_PUMP" AS INSERT INTO "HOME_STREAM"
         FROM "SOURCE_SQL_STREAM_001"
         WHERE "endpoint" LIKE 'home';
 
--- // Presetnation
+// Presetnation
 CREATE OR REPLACE STREAM "HOME_STREAM" (logtime timestamp, ip VARCHAR(16), response_code integer, response_time real, endpoint varchar(32), 
     COL_timestamp varchar(32), APPROXIMATE_ARRIVAL_TIME timestamp);
     
